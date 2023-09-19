@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Reserva</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Reserva de Vaga de Estacionamento</h1>
+    </header>
+    <main>
+        <section id="cadastro">
+            <h2>Cadastro de Reserva</h2>
+            <form id="reserva-form">
+                <label for="proprietario">Nome do Proprietário:</label><br>
+                <input type="text" id="proprietario" required><br><br>
+                
+                <label for="placa">Placa do Veículo:</label><br>
+                <input type="text" id="placa" required><br><br>
+
+                <label for="numero-apartamento">Número do Apartamento:</label><br>
+                <input type="text" id="numero-apartamento" required><br><br>
+
+                <label for="bloco-apartamento">Bloco do Apartamento:</label><br>
+                <input type="text" id="bloco-apartamento" required><br><br>
+
+                <label for="modelo-veiculo">Modelo do Veículo:</label><br>
+                <input type="text" id="modelo-veiculo" required><br><br>
+
+                <label for="cor-veiculo">Cor do Veículo:</label><br>
+                <input type="text" id="cor-veiculo" required><br><br>
+
+                <label for="numero-vaga">Número da Vaga de Estacionamento:</label><br>
+                <input type="text" id="numero-vaga" required><br><br>
+
+                <button type="button" id="salvar-button" onclick="exibirMensagemDeSucesso()">Salvar</button>
+            </form>
+        </section>
+
+        <div id="mensagem-sucesso" class="hidden">
+            Reserva cadastrada com sucesso!
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
